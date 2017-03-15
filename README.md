@@ -1,7 +1,30 @@
-Flasky
-======
+创建分支，并将本地代码上传到分支上去
+1、Git init （在本地工程目录下。）
+2、git add .
+3、git commit -m "1a"  （”1a“为分支名）
+4、git branch 1a（创建分支）
+5、git checkout  1a（切换分支）
+6、git remote add origin  https://github.com/ZacharyRZ/LeaPython.git      
+7、git push origin 1a（将分支上传）
+注意:如果提示 "please tell me who you are“
+在.git 目录下的config文件，在最后添加
+[user]
+name = xxxx
+email = xxxxxxx@xx.com
 
-This repository contains the source code examples for my O'Reilly book [Flask Web Development](http://www.flaskbook.com).
 
-The commits and tags in this repository were carefully created to match the sequence in which concepts are presented in the book. Please read the section titled "How to Work with the Example Code" in the book's preface for instructions.
+
+migrate迁移mysql报错No module named 'MySQLdb'
+
+pip install  mysqlclient
+
+
+
+python manage.py db init 生成migrations文件夹
+
+python manage.py db migrate -m "initial migrateion"  生成迁移脚本
+
+python manage.py db upgrade   运行脚本，同步数据库
+
+
 
